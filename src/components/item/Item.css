@@ -1,0 +1,67 @@
+li {
+  display: inline-block;
+}
+
+.Checkbox {
+  transform: scale(3,2);
+}
+
+.EditableTask {
+    height: 24px;
+    width: 268px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 0.9em;
+}
+
+.Task {
+  height: 30px;
+  width: 291px;
+  font-size: 0.9em;
+  opacity: 0.8;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.CheckedTask {
+  color: #90FFF0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.InfoFoot {
+  text-align: center;
+  font-size: 0.7em;
+  font-family: Tahoma, Geneva, sans-serif;
+  opacity: 0.4;
+  margin: 5px;
+}
+
+.CancelButtons {
+margin-bottom: 3px;
+padding: 4px;
+transform: scale(1.1,1);
+}
+
+.DeleteAllButton {
+  height: 51px;
+  width: 170px;
+  color: grey;
+  font-weight: bold;
+  font-size: 0.8em;
+  opacity: 0.8;
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 5px;
+
+}
+
+.ItemTable {
+  align:center;
+  text-align: center;
+  font-family: Tahoma, Geneva, sans-serif;
+  opacity: 0.8;
+  width:380px;
+  padding-left: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
