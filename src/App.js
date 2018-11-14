@@ -51,9 +51,9 @@ class App extends Component {
   }
 
   //deletes the task from the list of tasks
-  deleteItem(key,countList) {
+  deleteItem(key) {
 
-    let newList = countList;
+    let newList = this.state.list;
     newList.splice(key,1);
 
     this.state.list = [];
@@ -65,11 +65,11 @@ class App extends Component {
   }
 
   //updates the status(checked/unchecked) of the task, based on checkbox status
-  checkItem(key,countList) {
-    let updatedTask = countList[key];
+  checkItem(key) {
+    let updatedTask = this.state.list[key];
     updatedTask.checked = !updatedTask.checked;
 
-    let newList = countList;
+    let newList = this.state.list;
     newList[key] = updatedTask;
     this.setState((state,props) => {
 
@@ -78,11 +78,11 @@ class App extends Component {
   }
 
   //counts the num of uncompleted tasks in the list
-  countUncheckedTasks(list) {
+  countUncheckedTasks() {
     let c = 0;
-    for(let i = 0; i < list.length; i++)
+    for(let i = 0; i < this.state.list.length; i++)
     {
-      if (list[i].checked === false)
+      if (this.state.list[i].checked === false)
       {
         c += 1;
       }

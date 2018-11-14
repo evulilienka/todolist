@@ -31,16 +31,16 @@ class Item extends React.Component {
   handleDeleteItemClick(e) {
     const key = e.target.value;
 
-    this.props.deleteItem(key,this.props.listItems);
-    this.props.countUncheckedTasks(this.props.listItems);
+    this.props.deleteItem(key);
+    this.props.countUncheckedTasks();
   }
 
   //handles checking and unchecking of the task by clicking on the checbox on the right
   handleCheckboxChange(e) {
     const key = e.target.value;
 
-    this.props.checkItem(key,this.props.listItems);
-    this.props.countUncheckedTasks(this.props.listItems);
+    this.props.checkItem(key);
+    this.props.countUncheckedTasks();
   }
 
   //checks if checkbox of the task is checked

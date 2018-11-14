@@ -19,7 +19,7 @@ class AddItem extends React.Component {
   //handles adding a task to the list of tasks
   handleClick(e) {
     this.props.addItem(this.props.newItem, false);
-    this.props.countUncheckedTasks(this.props.listItems);
+    this.props.countUncheckedTasks();
     this.inpt = e.srcElement;
     document.getElementsByName("placehold")[0].value="";
     this.props.changeItem('');
